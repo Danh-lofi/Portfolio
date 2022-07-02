@@ -1,0 +1,36 @@
+@use '../../scss/' as *;
+.button{
+    position: relative;
+    padding: 18px 34px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background-color: #fff;
+        outline: none;  
+        z-index: -1;
+        transition: width 0.3s linear;
+    }
+    &:hover::before{
+        width: 100%;
+        border: 1px solid #fff;
+    }
+
+    &__content{
+        z-index: 1;
+    }
+
+    &:hover &__content{
+        color: #333;
+    }
+}
