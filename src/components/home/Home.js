@@ -3,12 +3,16 @@ import "./home.scss";
 import banner from "../../assets/img/banner-bg.png";
 import HomeRight from "./home-right/HomeRight";
 import HomeLeft from "./home-left/HomeLeft";
+import Skill from "../skills/Skill";
 const Home = (props) => {
   return (
     <div className="home" style={{ backgroundImage: `url(${banner})` }}>
       <div className="home__container">
         <HomeLeft />
         <HomeRight />
+      </div>
+      <div className="home__skill">
+        <Skill />
       </div>
     </div>
   );

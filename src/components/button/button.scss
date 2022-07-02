@@ -34,3 +34,19 @@
         color: #333;
     }
 }
+
+.button__active{
+    padding: 18px 34px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+    // transform: scale(1.1);
+    &:hover{
+        transform: scale(1.1);
+    }
+}

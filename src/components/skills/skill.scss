@@ -1,0 +1,39 @@
+@use '../../scss/' as *;
+.skill{
+    background-color: #151515;
+    border-radius: 50px;
+    &__container{
+        padding: 50px 60px;
+    }
+    &__title{
+        color: #fff;
+        font-weight: 700;
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: 30px;
+        &__wrapper{
+            padding: 40px 0;
+        }
+    }
+
+    &__desc{
+        @include flex(center,center);
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.8rem;
+        opacity: 0.7;
+    }
+
+    &__list{
+        margin: 0 auto;
+        overflow: hidden;
+        width: 80%;
+        padding: 30px 0;
+    }
+    &__img{
+        height:10rem;
+        width: auto;
+    }
+}
+

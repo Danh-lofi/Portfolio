@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./nav.scss";
 import { IconFacebook, IconGitHub } from "../../icon/Icons";
 import Button from "../button/Button";
 const Navbar = (props) => {
+  const [isShrink, setIsShrink] = useState(false);
+  let className = "navbar";
+  useEffect(() => {
+    const shrinkHeader = () => {
+      if (document.documentElement.scrollTop > 50) {
+        setIsShrink(true);
+      } else {
+        setIsShrink(false);
+      }
+    };
+
+    window.addEventListener("scroll", shrinkHeader);
+    return () => {
+      window.removeEventListener("scroll", shrinkHeader);
+    };
+  }, []);
+
+  if (isShrink) {
+    className += " shrink";
+  }
   return (
-    <div className="navbar">
+    <div className={className}>
       <div className="navbar__container">
         <div className="navbar__wrapper">
           <div className="navbar__logo">
@@ -28,7 +48,7 @@ const Navbar = (props) => {
                 </li>
               </ul>
               <div className="navbar__nav__button">
-                <Button>Let's Connect</Button>
+                <Button>Contact Me</Button>
               </div>
             </div>
           </div>

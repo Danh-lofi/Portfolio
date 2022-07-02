@@ -1,5 +1,6 @@
 @use '../../scss/' as *;
 .navbar{
+    z-index: 10;
     position:  fixed;
     top: 0;
     left: 0;
@@ -14,21 +15,13 @@
             color: $white;
             padding:  15px 0;
             cursor: pointer;
-            // &:hover{
-            //     cursor: pointer;
-            //     -webkit-text-fill-color: transparent;
-            //     background: linear-gradient(90.21deg, rgb(216, 45, 145) -5.91%, rgb(127, 93, 231) 111.58%);;
-            //     // background: var(--gradient-text);
-            //     -webkit-background-clip: text;
-            //     background-clip: text;
-            // }
+           
         }
     }
     &__container{
         width: 100%;
         height: 100%;
 
-        // @include flex(center,center);
     }
     &__wrapper{
         max-width: $default-width;
@@ -131,5 +124,22 @@
                     }
             }
         }
+    }
+}
+
+.hide {
+    height: 0;
+    overflow: hidden;
+}
+
+.shrink {
+    height: $header-height-shrink;
+    background-color: #000;
+    width: 100%;
+    z-index: 99;
+    transition: height 0.2s ease;
+
+    @include tablet {
+        height: $header-height-tablet;
     }
 }

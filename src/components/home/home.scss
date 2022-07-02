@@ -1,11 +1,14 @@
 @use '../../scss/' as *;
 .home{
     padding-top: $header-height;
-    height: calc(100vh + $header-height);
- 
+    height: calc(100% + $header-height);
+    &__skill{
+        max-width: $default-width;
+        margin: 0 auto;
+    }
     &__container{
         display: flex;
-        padding: 200px 0;
+        padding: 100px 0;
         max-width: $default-width;
         margin: 0 auto;
     }
@@ -29,7 +32,7 @@
         &__title{
             font-weight: 700;
             color: #fff;
-            font-size: 7rem;
+            font-size: 6rem;
             line-height: 8rem;
             margin-bottom: 40px;
         }
@@ -43,6 +46,13 @@
             font-size: 1.8rem;
             line-height: 2.5rem;
             margin-bottom: 40px;
+        }
+
+        &__btn{
+            button{
+                margin-right: 30px;
+            }
+            
         }
     }
 
