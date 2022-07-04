@@ -2,6 +2,9 @@ import React from "react";
 import Button from "../../button/Button";
 import "../home.scss";
 import Typical from "react-typical";
+import { Link } from "react-scroll";
+import cv from "../../../assets/file/CV_DoThanhDanh_Intern.pdf";
+
 const HomeLeft = () => {
   return (
     <div className="home__left">
@@ -27,8 +30,20 @@ const HomeLeft = () => {
           myself with the desire to become a good programmer.
         </span>
         <div className="home__left__btn">
-          <Button active>Dowload CV</Button>
-          <Button active>Contact Me</Button>
+          <Button link={cv} active download>
+            Dowload CV
+          </Button>
+          <Button scroll="contact" active>
+            <Link
+              offset={62}
+              spy={true}
+              smooth={true}
+              duration={500}
+              to="contact"
+            >
+              Contact Me
+            </Link>
+          </Button>
         </div>
       </div>
     </div>

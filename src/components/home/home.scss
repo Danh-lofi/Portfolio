@@ -1,11 +1,12 @@
 @use '../../scss/' as *;
 .home{
-    padding-top: $header-height;
+    padding-top: $header-height-shrink;
     height: calc(100% + $header-height);
     &__skill{
+        // padding-top: $header-height;
         max-width: $default-width;
         margin: 0 auto;
-        padding-bottom: 50px;
+        padding: 50px 0;
     }
     &__container{
         display: flex;

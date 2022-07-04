@@ -1,0 +1,68 @@
+@use '../../scss/' as *;
+.contact{
+    padding: 20px 0;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);;
+    &__button{
+        margin-top: 30px;
+    }
+    &__container{
+        padding: 100px 0;
+        max-width: $default-width;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    &__left{
+        flex:5;
+    }
+
+    &__div{
+        flex: 1;
+    }
+
+    &__right{
+         flex:6;   
+    }
+
+    &__title{
+        color:#fff;
+        font-size: 4rem;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+
+    &__form{
+        &__container{
+            padding: 5px 0;
+            display: flex;
+        }
+
+        &__input{
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 22px 26px;
+            margin-right: 10px;
+            border-radius:12px;
+            font-size: 1.6rem;
+            transition: all 0.5s linear;
+            &::placeholder{
+                color: #fff;
+            }
+
+            &:focus{
+                background-color: #fff;
+                border: 1px solid #121212;
+                outline: 2px solid #fff;   
+            }
+
+            &:focus::placeholder{
+                color: #000;
+            }
+
+
+        }
+    }
+}
+

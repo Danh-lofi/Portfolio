@@ -7,11 +7,11 @@ import Skill from "../skills/Skill";
 const Home = (props) => {
   return (
     <div className="home" style={{ backgroundImage: `url(${banner})` }}>
-      <div className="home__container">
+      <div className="home__container" id="home">
         <HomeLeft />
         <HomeRight />
       </div>
-      <div className="home__skill">
+      <div className="home__skill" id="skill">
         <Skill />
       </div>
     </div>

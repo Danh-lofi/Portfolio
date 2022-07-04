@@ -1,6 +1,5 @@
 import React from "react";
 import "../project.scss";
-
 import Button from "../../button/Button";
 const ItemProject = (props) => {
   let classEx;
@@ -10,28 +9,29 @@ const ItemProject = (props) => {
   return (
     <div className="item-project">
       <div className={`item-project__container ${classEx}`}>
-        <div className="item-project__left">
+        <a
+          href={props.linkDemo}
+          target="__blank"
+          className="item-project__left"
+        >
           <img className="item-project__src" src={props.src} alt="" />
-        </div>
+          <video
+            className="item-project__video"
+            src={props.video}
+            muted
+            autoPlay
+            loop
+          ></video>
+        </a>
         <div className="item-project__right">
           <h4 className="item-project__title">{props.name}</h4>
           <span className="item-project__desc">{props.desc}</span>
 
           <div className="item-project__buttons">
-            <Button
-              project
-              small
-              active
-              link="https://donpeppe-clone-ab92e.web.app/"
-            >
+            <Button project small active link={props.linkDemo}>
               Live Demo
             </Button>
-            <Button
-              project
-              small
-              active
-              link="https://github.com/Danh-lofi/DonPeppe"
-            >
+            <Button project small active link={props.linkGithub}>
               Link Github
             </Button>
           </div>

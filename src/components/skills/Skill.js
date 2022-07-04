@@ -18,7 +18,6 @@ import SwiperCore, { Autoplay, EffectCoverflow, Pagination } from "swiper";
 
 const Skill = (props) => {
   const listImg = [html, css, js, bootstrap, react, redux, github];
-  listImg.map((item) => console.log(item));
   return (
     <div className="skill">
       <div className="skill__container">

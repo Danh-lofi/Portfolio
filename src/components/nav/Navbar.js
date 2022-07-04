@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./nav.scss";
 import { IconFacebook, IconGitHub } from "../../icon/Icons";
+
+import { Link } from "react-scroll";
+
 import Button from "../button/Button";
 const Navbar = (props) => {
   const [isShrink, setIsShrink] = useState(false);
@@ -28,28 +31,80 @@ const Navbar = (props) => {
       <div className="navbar__container">
         <div className="navbar__wrapper">
           <div className="navbar__logo">
-            <h3>Portfolio</h3>
+            <h3>
+              <Link
+                offset={-120}
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Portfolio
+              </Link>
+            </h3>
           </div>
           <div className="navbar__nav">
             <div className="navbar__nav__container">
-              <span className="navbar__nav__link active">Home</span>
-              <span className="navbar__nav__link">Skills</span>
-              <span className="navbar__nav__link">Projects</span>
+              <Link
+                offset={-120}
+                className="navbar__nav__link"
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Home
+              </Link>
+              <Link
+                offset={-120}
+                className="navbar__nav__link"
+                spy={true}
+                smooth={true}
+                duration={500}
+                to="skill"
+              >
+                Skills
+              </Link>
+              <Link
+                className="navbar__nav__link"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-62}
+                to="project"
+              >
+                Projects
+              </Link>
               <ul className="navbar__nav__list_social">
                 <li className="navbar__nav__item__social">
-                  <div className="navbar__nav__item__social__wrapper">
+                  <a
+                    target="__blank"
+                    href="https://www.facebook.com/profile.php?id=100011665686890"
+                    className="navbar__nav__item__social__wrapper"
+                  >
                     <IconFacebook />
-                  </div>
+                  </a>
                 </li>
                 <li className="navbar__nav__item__social">
-                  <div className="navbar__nav__item__social__wrapper">
+                  <a
+                    target="__blank"
+                    href="https://github.com/Danh-lofi"
+                    className="navbar__nav__item__social__wrapper"
+                  >
                     <IconGitHub />
-                  </div>
+                  </a>
                 </li>
               </ul>
-              <div className="navbar__nav__button">
+              <Link
+                offset={62}
+                className="navbar__nav__button"
+                spy={true}
+                smooth={true}
+                duration={500}
+                to="contact"
+              >
                 <Button>Contact Me</Button>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

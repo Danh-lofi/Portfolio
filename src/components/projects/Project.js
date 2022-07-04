@@ -3,7 +3,7 @@ import ListProject from "./list-project/ListProject";
 import "./project.scss";
 const Project = (props) => {
   return (
-    <div className="project">
+    <div id="project" className="project">
       <div className="project__container">
         <h3 className="project__header">
           My <span className="project__header__ef">Project</span>
