@@ -5,6 +5,7 @@
     &__skill{
         max-width: $default-width;
         margin: 0 auto;
+        padding-bottom: 50px;
     }
     &__container{
         display: flex;
@@ -49,9 +50,7 @@
         }
 
         &__btn{
-            button{
-                margin-right: 30px;
-            }
+          
             
         }
     }

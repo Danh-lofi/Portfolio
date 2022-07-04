@@ -1,0 +1,71 @@
+@use '../../scss/' as *;
+.project{
+    background-color: #000;
+    &__container{
+        max-width: $default-width;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+
+    &__header{
+        color: #fff;
+        font-size: 4rem;
+        font-weight: 600;
+        text-align: center;
+        padding: 100px 0;
+
+        &__ef{
+            -webkit-text-fill-color: transparent;
+            background: $second-background;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+    }
+
+    &__list{
+        color: #fff;
+    }
+}
+
+.list-project{
+   
+}
+
+.item-project{
+    margin: 30px 0;
+    &__container{
+        display: flex;
+    }
+
+    &__left{
+        flex:5;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    &__right{
+        flex: 4;
+        padding: 50px;
+        padding-top: 0;
+        margin: 25px 0;
+    }
+    &__div{
+        flex: 2;
+    }
+
+    &__title{
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    &__desc{
+        opacity: 0.7;
+    }
+    &__buttons{
+        margin-top: 25px;
+    }
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}

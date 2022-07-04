@@ -50,3 +50,25 @@
         transform: scale(1.1);
     }
 }
+
+a.button,a.button__active{
+    display: inline-block;
+}
+
+.button ~ .button,
+.button__active ~ .button__active{
+    margin-left: 30px;
+}
+
+.small{
+    padding: 12px 28px;
+    font-size: 1.6rem;
+
+
+}
+
+.button__project{
+    border: none;
+    background: $second-background;
+    border-radius:12px;
+}
