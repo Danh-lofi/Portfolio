@@ -2,17 +2,32 @@
 .home{
     padding-top: $header-height-shrink;
     height: calc(100% + $header-height);
+    
     &__skill{
         // padding-top: $header-height;
         max-width: $default-width;
         margin: 0 auto;
         padding: 50px 0;
+        @include tablet {
+            max-width: $width-tablet;
+        }
+        @include mobile{
+            max-width: $width-mobile;
+        }
+        
     }
     &__container{
         display: flex;
         padding: 100px 0;
         max-width: $default-width;
         margin: 0 auto;
+        @include tablet{
+            max-width: $width-tablet;
+        }
+        @include mobile{
+            max-width: $width-mobile;
+            padding: 50px 0;
+        }
     }
 
     &__left{
@@ -58,7 +73,9 @@
 
     &__right{
         flex: 1;
-
+        @include mobile{
+            display: none;
+        }
         &__container{
             padding: 0 100px;
         }

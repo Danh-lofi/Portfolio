@@ -4,6 +4,9 @@
     border-radius: 50px;
     &__container{
         padding: 50px 60px;
+        @include mobile{
+            padding:0px;
+        }
     }
     &__title{
         color: #fff;

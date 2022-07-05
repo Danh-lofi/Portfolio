@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./nav.scss";
 import { IconFacebook, IconGitHub } from "../../icon/Icons";
+import cv from "../../assets/file/CV_DoThanhDanh_Intern.pdf";
+import bars from "../../assets/img/bars.png";
 
 import { Link } from "react-scroll";
 
@@ -30,6 +32,9 @@ const Navbar = (props) => {
     <div className={className}>
       <div className="navbar__container">
         <div className="navbar__wrapper">
+          <div className="navbar__bars" onClick={props.onClick}>
+            <img className="navbar__bars__img" src={bars} alt="bars" />
+          </div>
           <div className="navbar__logo">
             <h3>
               <Link
@@ -43,6 +48,13 @@ const Navbar = (props) => {
               </Link>
             </h3>
           </div>
+
+          <div className="navbar__nav__list_social phone">
+            <a href={cv} className="navbar__nav__cv" download>
+              CV
+            </a>
+          </div>
+
           <div className="navbar__nav">
             <div className="navbar__nav__container">
               <Link

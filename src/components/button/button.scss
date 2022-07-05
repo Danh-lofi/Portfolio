@@ -8,6 +8,10 @@
     border: 1px solid #fff;
     outline: none;
     cursor: pointer;
+    @include tablet{
+        padding: 10px 30px;
+        font-size: 1.5rem;
+    }
     &::before{
         content: "";
         position: absolute;

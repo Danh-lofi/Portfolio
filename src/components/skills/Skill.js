@@ -31,6 +31,7 @@ const Skill = (props) => {
           <Swiper
             grabCursor={true}
             slidesPerView={5}
+            // slidesPerView={3}
             coverflowEffect={{
               rotate: 50,
               stretch: 0,

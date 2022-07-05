@@ -10,11 +10,11 @@ html {
     font-size: 62.5%;
 
     @include tablet {
-        font-size: 80%;
+        font-size: 50%;
     }
 
     @include mobile {
-        font-size: 60%;
+        font-size: 40%;
     }
 }
 
@@ -83,3 +83,11 @@ html {
 }
 
 
+
+
+
+.swiper-slide{
+    @include mobile{
+        width: 94px !important;
+    }
+}

@@ -4,16 +4,30 @@
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);;
     &__button{
         margin-top: 30px;
+        @include mobile{
+            & button{
+                width: 100%;
+            }
+        }
     }
     &__container{
         padding: 100px 0;
         max-width: $default-width;
         margin: 0 auto;
         display: flex;
+        @include mobile{
+            max-width: $width-mobile;
+        }
+        @include tablet{
+            max-width: $width-tablet;
+        }
     }
 
     &__left{
         flex:5;
+        @include mobile{
+            display: none;
+        }
     }
 
     &__div{

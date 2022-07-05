@@ -5,6 +5,12 @@
         max-width: $default-width;
         margin: 0 auto;
         padding: 50px 0;
+        @include tablet {
+            max-width: $width-tablet;
+        }
+        @include mobile{
+            max-width: $width-mobile;
+        }
     }
 
     &__header{
@@ -24,6 +30,7 @@
 
     &__list{
         color: #fff;
+
     }
 }
 
@@ -33,6 +40,11 @@
 
 .item-project{
     margin: 30px 0;
+    @include tablet {
+        margin: 0;
+        margin-bottom: 100px;
+
+    }
     &__src{
         cursor: pointer;
         z-index: 1;
@@ -56,6 +68,9 @@
     }
     &__container{
         display: flex;
+        @include mobile{
+            flex-direction: column;
+        }
     }
 
     &__left{
@@ -69,9 +84,18 @@
         padding: 50px;
         padding-top: 0;
         margin: 25px 0;
+        @include tablet{
+            margin: 0;
+        }
+        @include mobile{
+            padding-top: 35px;
+        }
     }
     &__div{
         flex: 2;
+        @include tablet {
+            flex: 0;
+        }
     }
 
     &__title{
@@ -90,4 +114,10 @@
 
 .reverse{
     flex-direction: row-reverse;
+    @include tablet {
+        flex-direction: row;
+    }
+    @include mobile {
+        flex-direction: column;
+    }
 }
