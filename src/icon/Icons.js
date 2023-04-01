@@ -9,11 +9,11 @@ export const IconFacebook = () => {
 export const IconGitHub = () => {
   return (
     <svg
-      ariaHidden="true"
+      aria-hidden="true"
       focusable="false"
-      dataPrefix="fab"
-      dataIcon="github"
-      class="svg-inline--fa fa-github icon-header"
+      // dataPrefix="fab"
+      // dataIcon="github"
+      className="svg-inline--fa fa-github icon-header"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 496 512"

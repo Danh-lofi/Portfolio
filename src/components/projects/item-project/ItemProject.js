@@ -3,11 +3,13 @@ import "../project.scss";
 import Button from "../../button/Button";
 const ItemProject = (props) => {
   let classEx;
+  let dataAos;
   if ((props.id / 1) % 2 == 0) {
     classEx = "reverse";
-  }
+    dataAos = "fade-left";
+  } else dataAos = "fade-right";
   return (
-    <div className="item-project">
+    <div className="item-project" data-aos={dataAos} data-aos-duration="2000">
       <div className={`item-project__container ${classEx}`}>
         <a
           href={props.linkDemo}

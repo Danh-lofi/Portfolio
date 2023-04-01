@@ -32,6 +32,36 @@
         color: #fff;
 
     }
+    &__navigation{
+        padding-top: 2rem;
+        &__list{
+            @include flex(center,center);
+        }
+
+        &__item{
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.8rem;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            @include flex(center, center);
+            padding: 20px;
+            height: 1rem;
+            width: 1rem;
+            transition: all 0.2s ease-in-out;
+            &.active{
+                background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+                    border: none;
+                    transform: scale(0.8, 0.8);
+            }
+            &:hover{
+                cursor: pointer;
+                background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+                border: none;
+                transform: scale(0.8,0.8);
+            }
+        }
+    }
 }
 
 .list-project{

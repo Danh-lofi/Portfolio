@@ -17,6 +17,7 @@ import "swiper/css/pagination";
 import SwiperCore, { Autoplay, EffectCoverflow, Pagination } from "swiper";
 
 const Skill = (props) => {
+  SwiperCore.use([Autoplay]);
   const listImg = [html, css, js, bootstrap, react, redux, github];
   return (
     <div className="skill">
@@ -27,11 +28,16 @@ const Skill = (props) => {
             These are the skills I have learned over the years
           </span>
         </div>
-        <div className="skill__list">
+        <div
+          className="skill__list"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000"
+        >
           <Swiper
             grabCursor={true}
             slidesPerView={5}
-            // slidesPerView={3}
+            autoplay={true}
             coverflowEffect={{
               rotate: 50,
               stretch: 0,

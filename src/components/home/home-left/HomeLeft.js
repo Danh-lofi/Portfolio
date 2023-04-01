@@ -24,7 +24,7 @@ const HomeLeft = () => {
           />
         </h3>
         <span className="home__left__info">
-          Currently, I am a 3rd year student at Industrial University of Ho Chi
+          Currently, I am a 4th year student at Industrial University of Ho Chi
           Minh City, majoring in software engineering. My hobbies are reading
           books, listening to music and coding. I always strive to develop
           myself with the desire to become a good programmer.

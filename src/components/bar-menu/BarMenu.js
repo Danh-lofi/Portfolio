@@ -5,12 +5,10 @@ import { IconFacebook, IconGitHub } from "../../icon/Icons";
 import Button from "../button/Button";
 
 const BarMenu = (props) => {
-  console.log(props.isBar);
   let className;
   if (props.isBar) {
     className = "active";
   }
-  console.log(className);
   return (
     <div className={`bar-menu ${className}`}>
       <div className="bar-menu__close" onClick={props.onClick}>
