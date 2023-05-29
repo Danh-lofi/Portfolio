@@ -3,6 +3,7 @@ import ListProject from "./list-project/ListProject";
 import "./project.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import cupidify from "../../assets/img/cupidify.jpg";
 import donpeppe from "../../assets/img/donpeppe.png";
 import tmovie from "../../assets/img/tmovie.png";
 import setsail from "../../assets/img/setsail.png";
@@ -15,9 +16,19 @@ import tmovieVideo from "../../assets/video/tmovie_video.mp4";
 import bikeVideo from "../../assets/video/bike_video.mp4";
 import labnailVideo from "../../assets/video/labnail_video.mp4";
 import suarVideo from "../../assets/video/suar_video.mp4";
+import cupidifyVideo from "../../assets/video/cupidify.mp4";
 import { useEffect } from "react";
 
 const PROJECTS = [
+  {
+    id: "00",
+    name: "Cupidify",
+    src: cupidify,
+    desc: "This is a website that helps users find their soulmate. It has a filter feature to help users find their soulmate more easily and conveniently.",
+    linkGithub: "https://github.com/Danh-lofi/cupidify",
+    linkDemo: "https://cupidiify.vercel.app/",
+    video: cupidifyVideo,
+  },
   {
     id: "01",
     name: "Don Peppe",

@@ -6,7 +6,11 @@ import react from "../../assets/img/react.png";
 import bootstrap from "../../assets/img/bootstrap.png";
 import github from "../../assets/img/github.png";
 import js from "../../assets/img/js.png";
+import typescript from "../../assets/img/typescript.png";
+import express from "../../assets/img/express.png";
+import nest from "../../assets/img/nest.png";
 import redux from "../../assets/img/redux.png";
+import tailwind from "../../assets/img/tailwind.png";
 // import required modules
 
 // import SwiperCore, { Autoplay } from "swiper";
@@ -18,7 +22,19 @@ import SwiperCore, { Autoplay, EffectCoverflow, Pagination } from "swiper";
 
 const Skill = (props) => {
   SwiperCore.use([Autoplay]);
-  const listImg = [html, css, js, bootstrap, react, redux, github];
+  const listImg = [
+    html,
+    css,
+    js,
+    typescript,
+    bootstrap,
+    react,
+    redux,
+    github,
+    tailwind,
+    nest,
+    express,
+  ];
   return (
     <div className="skill">
       <div className="skill__container">

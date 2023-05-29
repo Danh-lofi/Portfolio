@@ -3,7 +3,7 @@ import Button from "../../button/Button";
 import "../home.scss";
 import Typical from "react-typical";
 import { Link } from "react-scroll";
-import cv from "../../../assets/file/CV_DoThanhDanh_Intern.pdf";
+import cv from "../../../assets/file/DO-THANH-Danh.pdf";
 
 const HomeLeft = () => {
   return (
@@ -18,16 +18,16 @@ const HomeLeft = () => {
           Hi! I'm
           {/* Danh Front-end Developer */}
           <Typical
-            steps={[" Danh", 2000, "Front-end Developer", 2000]}
+            steps={[" Danh", 2000, "Fullstack Developer", 2000]}
             loop={Infinity}
             // wrapper="p"
           />
         </h3>
         <span className="home__left__info">
-          Currently, I am a 4th year student at Industrial University of Ho Chi
-          Minh City, majoring in software engineering. My hobbies are reading
-          books, listening to music and coding. I always strive to develop
-          myself with the desire to become a good programmer.
+          Currently, I have graduated at Industrial University of Ho Chi Minh
+          City, majoring in software engineering. My hobbies are reading books,
+          listening to music and coding. I always strive to develop myself with
+          the desire to become a good programmer.
         </span>
         <div className="home__left__btn">
           <Button link={cv} active download>

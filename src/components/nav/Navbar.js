@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./nav.scss";
 import { IconFacebook, IconGitHub } from "../../icon/Icons";
-import cv from "../../assets/file/CV_DoThanhDanh_Intern.pdf";
+import cv from "../../assets/file/DO-THANH-Danh.pdf";
 import bars from "../../assets/img/bars.png";
 
 import { Link } from "react-scroll";
