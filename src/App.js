@@ -16,6 +16,14 @@ function App() {
   const changeIsBarHandler = () => {
     setIsBar((isBar) => !isBar);
   };
+  useEffect(() => {
+    fetch("https://doan-be.vercel.app/mail", {
+      method: "POST", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  });
   return (
     <div className="App">
       <Navbar onClick={changeIsBarHandler} />

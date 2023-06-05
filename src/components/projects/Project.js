@@ -103,6 +103,7 @@ const Project = (props) => {
   }
   const ListPage = arrPage.map((page) => (
     <li
+      key={page}
       className={`project__navigation__item ${number === page ? "active" : ""}`}
       onClick={() => setNumber(page)}
     >
