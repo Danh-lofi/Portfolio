@@ -74,9 +74,27 @@
             &:focus::placeholder{
                 color: #000;
             }
+             &__error{
+                color: rgb(255, 25, 25);
+                font-size: 1.2rem;
+                padding-top: 5px;
+                font-weight: bold;
+            
+            }
 
-
+           
         }
     }
 }
 
+
+.alert {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f2f2f2;
+}
+
+.alert button {
+    margin-left: 10px;
+}

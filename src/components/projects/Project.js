@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import ListProject from "./list-project/ListProject";
 import "./project.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,6 +18,7 @@ import labnailVideo from "../../assets/video/labnail_video.mp4";
 import suarVideo from "../../assets/video/suar_video.mp4";
 import cupidifyVideo from "../../assets/video/cupidify.mp4";
 import { useEffect } from "react";
+import {  scroller  as scroll } from "react-scroll";
 
 const PROJECTS = [
   {
@@ -105,7 +106,9 @@ const Project = (props) => {
     <li
       key={page}
       className={`project__navigation__item ${number === page ? "active" : ""}`}
-      onClick={() => setNumber(page)}
+      onClick={() => {setNumber(page)
+    scroll.scrollTo("project")
+      }}
     >
       {page}
     </li>
@@ -113,10 +116,12 @@ const Project = (props) => {
 
   const decreaseNumberPageHandler = () => {
     number > 1 && setNumber(number - 1);
+    scroll.scrollTo("project")
   };
 
   const increaseNumberPageHandler = () => {
     number !== numberPage && setNumber(number + 1);
+    scroll.scrollTo("project")
   };
 
   return (
