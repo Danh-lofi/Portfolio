@@ -28,14 +28,14 @@ function App() {
     };
   }, []);
 
-  // useEffect(() => {
-  //   fetch("https://doan-be.vercel.app/mail", {
-  //     method: "POST", // or 'PUT'
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //   });
-  // });
+  useEffect(() => {
+    fetch("https://doan-be.vercel.app/mail", {
+      method: "POST", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  });
   return (
     <div className="App">
       <Navbar onClick={changeIsBarHandler} />
